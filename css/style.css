@@ -1,0 +1,1107 @@
+@font-face {
+    src: url(../fonts/JFFlatregular.ttf);
+    font-family: ar-font;
+}
+
+body {
+    font-family: ar-font;
+    direction: rtl;
+}
+
+
+/* start style NavBar*/
+nav.navbar ul.navbar-nav {
+    flex-direction: row;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link {
+    color: white;
+    font-size: 18px;
+    line-height: 60px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: all 0.5s ease;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link:hover,
+nav.navbar ul.navbar-nav li a.nav-link.active {
+    background-color: orange;
+    color: black;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+    color: black;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:active {
+    color: whitesmoke;
+    background-color: orangered;
+}
+
+nav.navbar.noTransparrent {
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/*Finish style NavBar*/
+
+
+/*Start style NavBar-sm-icon*/
+nav.navbar.noTransparrent button.navbar-toggler {
+    margin: 30px auto;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler span {
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+}
+
+/*Finish style navbar-sm-icon*/
+
+
+/*Start style Header*/
+header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+}
+
+header .MainCard {
+    background-color: rgba(255, 166, 0, 0.8);
+    color: black;
+    transform: translateY(20%);
+    padding: 3% 10%;
+}
+
+header .MainCard img {
+    border: 5px solid rgba(39, 39, 39, 0.8);
+    margin-bottom: 20px;
+}
+
+header .MainCard h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+header .MainCard h1 span {
+    font-size: 22px;
+}
+
+header .MainCard ul {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+
+header .MainCard ul li {
+    margin-right: 10px;
+}
+
+header .MainCard ul li a {
+    font-size: 24px;
+    color: white;
+    background-color: rgba(11, 118, 160, 0.8);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+}
+
+header .MainCard ul li a:hover {
+    background-color: black;
+    transition: all .7s ease;
+}
+
+header .MainCard h2 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+header .MainCard p {
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+header .MainCard>a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px;
+}
+
+header .MainCard>a:hover {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+/*Finish style Header*/
+
+
+/*Start style section Licence*/
+section.licence {
+    padding: 150px 0 80px;
+    background-color: #f6fbff;
+    position: relative;
+}
+
+section.licence .title {
+    padding-bottom: 40px;
+}
+
+section.licence .title h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: orangered;
+}
+
+section.licence .title h2 i {
+    display: block;
+}
+
+section.licence .title:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: peru;
+    bottom: 74.6%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+section.licence ul.timeline li .time-box {
+    background-color: white;
+    border: 2px solid rgba(128, 128, 128, 0.6);
+    padding: 20px 25px;
+    max-width: 48%;
+    box-shadow: 2px 0px 10px #343434;
+    position: relative;
+}
+
+section.licence ul.timeline li .time-box h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #343434;
+}
+
+section.licence ul.timeline li .time-box h4 span {
+    color: white;
+    background-color: rgb(150, 99, 5);
+    padding: 0 5px;
+    margin-left: 30px;
+}
+
+
+section.licence ul.timeline li .time-box p {
+    font-size: 17px;
+    line-height: 24px;
+    color: black;
+}
+
+section.licence ul.timeline li .time-box::after {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -10px;
+    border-left: 2px solid rgba(128, 128, 128, 0.6);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.6);
+    transform: rotate(45deg);
+}
+
+section.licence ul.timeline {
+    padding-right: 0;
+    padding-top: 45px;
+    position: relative;
+}
+
+section.licence ul.timeline:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    margin-right: -1px;
+    background-color: peru;
+}
+
+section.licence ul.timeline li {
+    position: relative;
+}
+
+section.licence ul.timeline li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: peru;
+    position: absolute;
+    top: 9%;
+    right: 50%;
+    margin-right: -5px;
+}
+
+section.licence ul.timeline li:nth-of-type(even) {
+    direction: ltr;
+    text-align: left;
+}
+
+section.licence ul.timeline li:nth-of-type(even) .time-box h4 span {
+    margin-left: 0;
+    margin-right: 25px;
+    float: left;
+}
+
+section.licence ul.timeline li:nth-of-type(even) .time-box::after {
+    left: auto;
+    right: -10px;
+    border-top: rgba(128, 128, 128, 0.6);
+    border-right: rgba(128, 128, 128, 0.6);
+}
+
+/* Finish Style Section Licence*/
+
+
+/***
+section.licence ul.timeline li:not(:first-of-type) {}
+***/
+
+/*Start Style Statistics*/
+section.statistics {
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section.statistics .overlay {
+    background-color: rgba(255, 166, 0, 0.7);
+    padding: 150px 0;
+}
+
+
+section.statistics .overlay .stat p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: ar-font;
+    color: white;
+    margin-top: 30px;
+}
+
+section.statistics .overlay .stat .circle canvas {
+    background-color: #f6fbff;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+section.statistics .overlay .stat .circle {
+    position: relative;
+}
+
+section.statistics .overlay .stat .circle span {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 33%;
+    right: 48%;
+    transform: translate(50%, -50%);
+}
+
+/*Finish Style Statistics*/
+
+
+/*Start Style Gallery*/
+section.gallery {
+    padding: 75px 0 90px;
+}
+
+section.gallery .title {
+    margin-bottom: 35px;
+}
+
+section.gallery .title h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: orangered;
+}
+
+section.gallery .title h2 i {
+    display: block;
+}
+
+section.gallery .work-gallery input {
+    display: none;
+}
+
+section.gallery .work-gallery label {
+    font-size: 20px;
+    line-height: 35px;
+    color: black;
+    cursor: pointer;
+    margin: 0 7px 40px;
+    padding: 10px 30px;
+    background-color: #f6fbff;
+    border: 2px solid silver;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px silver;
+    transition: all .5s ease;
+}
+
+section.gallery .work-gallery label:hover {
+    background-color: orange;
+    color: black;
+    border: 2px solid orange;
+}
+
+section.gallery .work-gallery input.item-type-1:checked~label.label-type-1,
+section.gallery .work-gallery input.item-type-2:checked~label.label-type-2,
+section.gallery .work-gallery input.item-type-3:checked~label.label-type-3,
+section.gallery .work-gallery input.item-type-all:checked~label.label-type-all {
+    background-color: orange;
+    color: black;
+    border: 2px solid orange;
+}
+
+section.gallery .work-gallery input.item-type-1:checked~.items .item-type-1,
+section.gallery .work-gallery input.item-type-2:checked~.items .item-type-2,
+section.gallery .work-gallery input.item-type-3:checked~.items .item-type-3 {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+section.gallery .work-gallery input.item-type-1:checked~.items .item:not(.item-type-1),
+section.gallery .work-gallery input.item-type-2:checked~.items>.item:not(.item-type-2),
+section.gallery .work-gallery input.item-type-3:checked~.items>.item:not(.item-type-3) {
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+section.gallery .work-gallery .items .item {
+    transition: all 0.6s ease;
+}
+
+/*Finish Style Gallery*/
+
+
+/*Start Style Section Contacts*/
+
+section.contacts {
+    background-image: url(../images/bg3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.contacts .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+section.contacts .overlay .testimonials .title h3 {
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+    margin-bottom: 27px;
+}
+
+section.contacts .overlay .testimonials .slider {
+    width: 65%;
+    margin: 0 auto 80px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel {
+    min-height: 250px;
+    color: #b1b1b1;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
+    background-color: #f6fbff;
+    width: 100%;
+    padding: 80px 70px 35px;
+    right: 0;
+    left: 0;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+    min-height: 350px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption img {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption h3 span {
+    font-size: 16px;
+    color: #555555;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption p {
+    font-size: 15px;
+    line-height: 22px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li a {
+    font-size: 30px;
+    color: rgb(2, 133, 156);
+    transition: all .5s ease;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li a:hover {
+    color: orangered;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul {
+    padding-right: 0;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li {
+    margin-right: 5px;
+}
+
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators li {
+    max-width: 15px;
+    height: 15px;
+    border: 1px solid rgb(2, 133, 156);
+    background-color: white;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators li.active {
+    background-color: rgb(2, 133, 156);
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators {
+    padding-right: 0;
+    margin: 0;
+    bottom: 13px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev,
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-next {
+    top: 50%;
+    width: auto;
+    margin: auto;
+    transform: translate(50%, -50%);
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i,
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i {
+    padding: 10px 20px;
+    background-color: rgb(2, 133, 156);
+    border-radius: 25%;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
+    transform: translate(-50%, -50%);
+}
+
+/*Finish Style Section Contacts-testimonials*/
+
+
+/*Start Style Section Contacts-contact-info*/
+
+section.contacts .overlay .contact-info {
+    background-color: white;
+    padding: 50px;
+}
+
+section.contacts .overlay .contact-info .title h2 {
+    font-size: 30px;
+    color: orangered;
+    margin-bottom: 35px;
+    line-height: 50px;
+}
+
+section.contacts .overlay .contact-info .form form .form-group input,
+section.contacts .overlay .contact-info .form form .form-group textarea {
+    border: 2px solid #cecdcd;
+    border-radius: 3px;
+    font-family: ar-font;
+    font-size: 16px;
+    color: #000000;
+    line-height: 35px;
+    padding-right: 40px;
+}
+
+section.contacts .overlay .contact-info .form form .form-group textarea {
+    min-width: 220px;
+    min-height: 220px;
+}
+
+section.contacts .overlay .contact-info .form form .form-group {
+    position: relative;
+}
+
+section.contacts .overlay .contact-info .form form .form-group i {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    color: orangered;
+    display: inline-block;
+}
+
+/*
+section.contacts .overlay .contact-info .form form .form-group:before {
+    font-family: FontAwsome;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    color: orangered;
+    display: inline-block;
+}
+
+section.contacts .overlay .contact-info .form form .form-group:first-of-type:before {
+    content: "\f007"; 
+}
+*/
+
+section.contacts .overlay .contact-info .form form button {
+    font-family: ar-font;
+    font-size: 20px;
+    line-height: 25px;
+    background-color: orangered;
+    border-radius: 3px;
+    border: 2px solid rgba(192, 192, 192, 0.5);
+    padding: 10px 70px;
+    margin-right: 15px;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+section.contacts .overlay .contact-info .form form button:hover {
+    background-color: rgb(2, 133, 156);
+}
+
+
+section.contacts .overlay .contact-info .contact-us li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: orangered;
+}
+
+section.contacts .overlay .contact-info ul {
+    padding: 0;
+}
+
+section.contacts .overlay .contact-info ul.social li {
+    margin-right: 10px;
+}
+
+section.contacts .overlay .contact-info ul.social li a i {
+    font-size: 24px;
+    background-color: orange;
+    color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s ease;
+}
+
+section.contacts .overlay .contact-info ul.social li a i:hover {
+    background-color: orangered;
+    color: #ffffff;
+}
+
+section.contacts .overlay .copyright p {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 40px;
+    color: wheat;
+}
+
+
+section.contacts .overlay .copyright p span a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+section.contacts .overlay .copyright p span a:hover {
+    color: rgb(7, 184, 207);
+    font-size: 16px;
+}
+
+/*Finish Style Section Contacts-contact-us*/
+
+
+/*Start Style Form Validate*/
+section.contacts form .error {
+    color: red;
+}
+
+/*Finish Style Form Validate*/
+
+
+/*Responsive Pages (mobile/laptop .... )*/
+@media(max-width: 991px) {
+    nav.navbar ul.navbar-nav li a.nav-link {
+        padding-right: 0.5rem;
+    }
+
+    header .MainCard {
+        transform: translateY(15%);
+        padding: 9% 15%;
+    }
+
+    section.licence .title:before {
+        bottom: 78.5%;
+    }
+
+    section.licence ul.timeline li .time-box {
+        width: 47%;
+    }
+
+    section.gallery .work-gallery label {
+        font-size: 17px;
+    }
+
+    .carousel-caption {
+        bottom: -30px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev,
+    section.contacts .overlay .testimonials .slider .carousel .carousel-control-next {
+        top: 58%;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul {
+        margin-bottom: 18px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-indicators {
+        bottom: -5px;
+    }
+
+    section.contacts .overlay .contact-info ul.social li a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    header .MainCard h2 {
+        line-height: 35px;
+    }
+
+    header .MainCard>a {
+        line-height: 180px;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+
+    header .MainCard p {
+        margin-bottom: -45px;
+    }
+
+    section.contacts .overlay .contact-info .form form .form-group input,
+    section.contacts .overlay .contact-info .form form .form-group textarea {
+        font-size: 14px;
+    }
+
+    section.contacts .overlay .contact-info .form form button {
+        font-size: 14px;
+        padding: 10px 35px;
+    }
+}
+
+
+
+
+@media(max-width: 767px) {
+
+    /*ضبط قائمة التنقل*/
+    nav.navbar {
+        min-height: 80px;
+    }
+
+    nav.navbar ul.navbar-nav {
+        flex-direction: column;
+        background-color: currentcolor;
+    }
+
+    nav.navbar .container {
+        width: 100%;
+    }
+
+    nav.navbar button.navbar-toggler span {
+        color: black;
+        background-color: rgba(255, 166, 0, 0.8);
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 10px;
+    }
+
+    nav.navbar.noTransparrent button.navbar-toggler {
+        margin: 15px auto;
+    }
+
+    nav.navbar ul.navbar-nav li a.nav-link:hover,
+    nav.navbar ul.navbar-nav li a.nav-link.active {
+        width: 50%;
+    }
+
+
+    nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+        color: wheat;
+    }
+
+    /*ضبط الؤهلات والشهادات*/
+    section.licence ul.timeline li .time-box {
+        max-width: 100%;
+    }
+
+    section.licence ul.timeline li:not(:first-of-type) {
+        margin-top: 20px;
+    }
+
+    section.licence ul.timeline .time-box::after {
+        display: none;
+    }
+
+    section.licence ul.timeline::before {
+        margin-top: 20px;
+    }
+
+    section.licence .title:before {
+        height: 5px;
+        margin-bottom: -9px;
+    }
+
+    section.licence ul.timeline:before {
+        height: 90%;
+    }
+
+    header .MainCard {
+        padding: 35% 5%;
+    }
+
+    header .MainCard img {
+        margin-top: -150px;
+    }
+
+    section.licence .title:before {
+        bottom: 85%;
+    }
+
+    section.licence ul.timeline li .time-box p {
+        text-align: right;
+    }
+
+    section.licence ul.timeline li .time-box h4 {
+        text-align: right;
+    }
+
+    section.licence ul.timeline li .time-box {
+        margin-top: -30px;
+    }
+
+    section.licence ul.timeline:before {
+        height: 98%;
+    }
+
+    section.gallery .work-gallery label {
+        font-size: 15px;
+        padding: 10px 15px;
+        margin: 0 5px 40px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+        min-height: 420px;
+    }
+
+    section.contacts .overlay .contact-info .form form .form-group input,
+    section.contacts .overlay .contact-info .form form .form-group textarea {
+        font-size: 14px;
+    }
+
+    section.contacts .overlay .contact-info ul {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    section.contacts .overlay .contact-info .form form button {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    header .MainCard>a {
+        line-height: 200px;
+    }
+
+}
+
+@media(max-width: 445px) {
+    section.gallery .work-gallery label {
+        font-size: 14px;
+        padding: 5px 7px;
+        margin: 0 4px 40px;
+    }
+
+    section.statistics .overlay .stat .circle span {
+        top: 31%;
+        right: 50%;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+        min-height: 510px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i,
+    section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i {
+        padding: 10px 10px;
+    }
+
+    header .MainCard {
+        padding: 20% 5%;
+    }
+
+    nav.navbar ul.navbar-nav li a.nav-link {
+        font-size: 15px;
+    }
+
+    header .MainCard h1 span {
+        font-size: 18px;
+    }
+
+    header .MainCard h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    section.licence ul.timeline li .time-box p {
+        font-size: 14px;
+    }
+
+    section.licence ul.timeline li .time-box h4 {
+        font-size: 12px;
+    }
+
+    section.licence ul.timeline li .time-box h4 span {
+        font-size: 10px;
+    }
+
+    section.licence .title:before {
+        display: none;
+    }
+
+    section.gallery .work-gallery label {
+        font-size: 14px;
+        padding: 0px 12px;
+        margin: 0 4px 25px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+        min-height: 820px;
+        margin-top: -50%;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i,
+    section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i {
+        padding: 5px 5px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li a {
+        font-size: 19px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
+        width: 165%;
+        right: -60px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i,
+    section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i {
+        display: none;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption,
+    section.contacts .overlay .testimonials .slider .carousel .carousel-indicators li {
+        bottom: 300px;
+    }
+
+    section.contacts .overlay .contact-info {
+        padding: 30px;
+    }
+
+    section.contacts .overlay .contact-info {
+        margin-top: -95%;
+    }
+
+    nav.navbar ul.navbar-nav li a.nav-link {
+        font-size: 14px;
+        margin-top: -22px;
+    }
+
+    nav.navbar ul.navbar-nav {
+        margin-top: 65px;
+    }
+
+    nav.navbar ul.navbar-nav li a.nav-link {
+        font-size: 11px;
+    }
+
+    header .MainCard h2 {
+        font-size: 16px;
+    }
+
+    header .MainCard p {
+        font-size: 15px;
+    }
+
+    header .MainCard>a {
+        font-size: 14px;
+    }
+
+    section.licence ul.timeline li:not(:first-of-type) {
+        margin-top: 50px;
+    }
+
+    section.licence ul.timeline li .time-box h4 {
+        font-size: 14px;
+    }
+
+    section.licence ul.timeline li .time-box {
+        width: 85%;
+    }
+
+    section.licence .title {
+        margin-top: -70px;
+    }
+}
+
+@media(max-width: 270px) {
+    header .MainCard img {
+        width: 45%;
+    }
+
+    header .MainCard h1 {
+        font-size: 18px;
+    }
+
+    header .MainCard h1 span {
+        font-size: 11px;
+    }
+
+    header .MainCard ul li a {
+        font-size: 18px;
+        line-height: 35px;
+        width: 35px;
+        height: 35px;
+    }
+
+    header .MainCard h2,
+    header .MainCard p {
+        font-size: 14px;
+    }
+
+    header .MainCard>a {
+        font-size: 12px;
+    }
+
+    section.licence .title h2 {
+        font-size: 20px;
+    }
+
+    section.licence ul.timeline li .time-box h4 {
+        font-size: 10px;
+    }
+
+    section.licence ul.timeline li .time-box p {
+        font-size: 12px;
+    }
+
+    section.gallery .title h2 {
+        font-size: 20px;
+    }
+
+    section.gallery .work-gallery label {
+        padding: 0px 5px;
+        margin: 0 4px 15px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
+        width: 175%;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption h3 span {
+        font-size: 13px;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li a {
+        font-size: 22px;
+    }
+
+    section.contacts .overlay .contact-info .form form .form-group textarea {
+        min-width: 200px;
+        min-height: 130px;
+    }
+
+    section.contacts .overlay .contact-info ul.social li a i {
+        font-size: 20px;
+    }
+
+    header .MainCard img {
+        margin-top: -80px;
+    }
+}
