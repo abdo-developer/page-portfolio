@@ -684,6 +684,24 @@ section.contacts form .error {
 
 
 /*Responsive Pages (mobile/laptop .... )*/
+@media(max-width: 1200px) {
+    header .MainCard {
+        padding: 3% 20%;
+    }
+
+    header .MainCard h2 {
+        margin-bottom: 0; 
+    }
+
+    header .MainCard ul {
+        margin-bottom: 10px;
+    }
+
+    header .MainCard h1 {
+        margin-bottom: 10px;
+    }
+}
+
 @media(max-width: 991px) {
     nav.navbar ul.navbar-nav li a.nav-link {
         padding-right: 0.5rem;
@@ -753,9 +771,6 @@ section.contacts form .error {
         padding: 10px 35px;
     }
 }
-
-
-
 
 @media(max-width: 767px) {
 
